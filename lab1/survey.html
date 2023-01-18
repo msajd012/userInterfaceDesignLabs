@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<link href="style.css" rel="stylesheet" type="text/css">
+    <title>Questionnaire</title>
+  </head>
+  
+  <body>
+	<h1>Analyzing Pit Viper's nostalgia-fueled website</h1>
+	<form id="myform" action="index.php" >
+
+	<a href="https://ca.pitviper.com"><img src="images/pitviper.png" alt="http://Provigo.ca" width="840px" ></a>
+	<br>
+
+	<p>Writer and podcaster Molly Huford is one of the many cyclists won over by the brand she calls 'rowdy', 'fun', and 'unapologetically loud'. Pit Viper is "capturing both the youth and nostolgia-loving markets", writes Huford, and their website (<a href="https://ca.pitviper.com">pitviper.com<a>) "makes you want to check your dial-up connection, fire up Napster, and download some Limp Bizkit."<br><br>Finish reading Molly's article <a href="https://www.bicycling.com/news/a40616197/pit-viper-cycling-sunglasses-trending/">here</a>, and let us know your thoughts on the Pit Viper website below.<br><br>
+
+
+	<div class="question">
+	<h2> Personal Information </h2>
+	<p>First name: <input type="text" name="firstname"></p>
+	<p>Last name: <input type="text" name="lastname"></p>
+	<br>
+	<br>
+		
+	</div><br>	
+		
+	<div class="question">
+		<h2> What you like </h2>
+		I like:<br>
+		<input type="checkbox" name="Color" value="Red">Red<br>
+		<input type="checkbox" name="Color" value="Green">Green<br>
+		<input type="checkbox" name="Color" value="Blue">Blue<br>
+		
+		<br>
+		
+		What is your favorite fruit?<br>
+		<select id="favorite">
+			<option value="Apples" selected="selected">Apples</option>
+			<option value="Oranges">Oranges</option>
+			<option value="Bananas">Bananas</option>
+		</select>
+	</div><br>
+	
+	<div class="question">
+	<h2>Comments:<h2>
+	<textarea rows="5" cols="30"></textarea>
+	</div>
+			
+	<br>
+			
+	<button id="submitButton" type="button" class="block">
+		Submit
+	</button>
+		
+	<p id="signature">Site created by Caroline Barrière</p>	
+	
+	</form>
+  </body>
+</html> 
