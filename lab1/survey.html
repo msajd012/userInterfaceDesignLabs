@@ -1,64 +1,113 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-	<link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Questionnaire</title>
   </head>
-  
+
   <body>
-	<h1>Analyzing Pit Viper's nostalgia-fueled website</h1>
-	<form id="myform" action="index.php" >
+    <h1>Analyzing Pit Viper's nostalgia-fueled website</h1>
+    <form id="myform" action="index.php">
+      <a href="https://ca.pitviper.com"
+        ><img src="images/pitviper.png" alt="http://Provigo.ca" width="840px"
+      /></a>
+      <br />
 
-	<a href="https://ca.pitviper.com"><img src="images/pitviper.png" alt="http://Provigo.ca" width="840px" ></a>
-	<br>
+      <p>
+        Writer and podcaster Molly Huford is one of the many cyclists won over
+        by the brand she calls 'rowdy', 'fun', and 'unapologetically loud'. Pit
+        Viper is "capturing both the youth and nostolgia-loving markets", writes
+        Huford, and their website (<a href="https://ca.pitviper.com"
+          >pitviper.com<a
+            >) "makes you want to check your dial-up connection, fire up
+            Napster, and download some Limp Bizkit."<br /><br />Finish reading
+            Molly's article
+            <a
+              href="https://www.bicycling.com/news/a40616197/pit-viper-cycling-sunglasses-trending/"
+              >here</a
+            >, and let us know your thoughts on the Pit Viper website below.<br /><br />
 
-	<p>Writer and podcaster Molly Huford is one of the many cyclists won over by the brand she calls 'rowdy', 'fun', and 'unapologetically loud'. Pit Viper is "capturing both the youth and nostolgia-loving markets", writes Huford, and their website (<a href="https://ca.pitviper.com">pitviper.com<a>) "makes you want to check your dial-up connection, fire up Napster, and download some Limp Bizkit."<br><br>Finish reading Molly's article <a href="https://www.bicycling.com/news/a40616197/pit-viper-cycling-sunglasses-trending/">here</a>, and let us know your thoughts on the Pit Viper website below.<br><br>
+            <div class="question">
+              <h2>Personal Information</h2>
+              <p>First name: <input type="text" name="firstname" /></p>
+              <p>Last name: <input type="text" name="lastname" /></p>
+              <br />
+              <br />
+            </div>
+            <br />
 
+            <div class="question">
+              <h2>Please choose where you think this website could improve:</h2>
+              <input type="checkbox" name="Color" value="Style" />Style<br />
+              <input type="checkbox" name="Color" value="Ease of Use" />Ease of
+              Use<br />
+              <input
+                type="checkbox"
+                name="Color"
+                value="Organization"
+              />Organization<br />
+              <input
+                type="checkbox"
+                name="Color"
+                value="Clarity"
+              />Clarity<br />
+              <input
+                type="checkbox"
+                name="Color"
+                value="Optimized for Mobile"
+              />Optimized for Mobile<br />
+              <input
+                type="checkbox"
+                name="Color"
+                value="Clear calls for action"
+              />Clear calls for action<br />
 
-	<div class="question">
-	<h2> Personal Information </h2>
-	<p>First name: <input type="text" name="firstname"></p>
-	<p>Last name: <input type="text" name="lastname"></p>
-	<br>
-	<br>
-		
-	</div><br>	
-		
-	<div class="question">
-		<h2> Please choose where you think this website could improve: </h2>
-		I like:<br>
-		<input type="checkbox" name="Color" value="Style">Style<br>
-		<input type="checkbox" name="Color" value="Ease of Use">Ease of Use<br>
-		<input type="checkbox" name="Color" value="Organization">Organization<br>
-		<input type="checkbox" name="Color" value="Clarity">Clarity<br>
-		<input type="checkbox" name="Color" value="Optimized for Mobile">Optimized for Mobile<br>
-		<input type="checkbox" name="Color" value="Clear calls for action">Clear calls for action<br>
-		
-		<br>
-		
-		If you had to select one aspect of the design as your favourite, what would it be?<br>
-		<select id="favorite">
-			<option value="Nostalgia-Value" selected="selected">Nostalgia-Value</option>
-			<option value="Uniqueness">Uniqueness</option>
-			<option value="Style">Style</option>
-		</select>
+              <br />
+              <h2>Your initial reaction to the website was:</h2>
+              <input type="radio" id="2" value="2" checked />
+              <label for="5">Positive</label>
+              <input type="radio" id="1" value="1" checked />
+              <label for="5">Mixed</label>
+              <input type="radio" id="0" value="0" checked />
+              <label for="5">Negative</label>
+              <br />
 
-	</div><br>
-	
-	<div class="question">
-	<h2>Where do you think this site could improve? Any additional comments?<h2>
-	<textarea rows="5" cols="110"></textarea>
-	</div>
-			
-	<br>
-			
-	<button id="submitButton" type="button" class="block">
-		Submit
-	</button>
-		
-	<p id="signature">Site created by Caroline Barrière</p>	
-	
-	</form>
+              <br />
+              <h2>
+                If you had to select one aspect of the design as your favourite,
+                what would it be?
+              </h2>
+              <select id="favorite">
+                <option value="Nostalgia-Value" selected="selected">
+                  Nostalgia-Value
+                </option>
+                <option value="Uniqueness">Uniqueness</option>
+                <option value="Style">Style</option>
+              </select>
+            </div>
+            <br />
+
+            <div class="question">
+              <h2>
+                Where do you think this site could improve? Any additional
+                comments?
+                <h2>
+                  <textarea rows="5" cols="110"></textarea>
+
+                  <br />
+
+                  <button id="submitButton" type="button" class="block">
+                    Submit
+                  </button>
+
+                  <p id="signature">Site created by Caroline Barrière</p>
+                </h2>
+              </h2>
+            </div></a
+          ></a
+        >
+      </p>
+    </form>
   </body>
-</html> 
+</html>
