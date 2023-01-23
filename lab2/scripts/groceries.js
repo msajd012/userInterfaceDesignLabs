@@ -20,6 +20,48 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		price: 10.00
+	},
+	{
+		name: "steak",
+		vegetarian: true,
+		glutenFree: true,
+		price: 12.35
+	},
+	{
+		name: "cake",
+		vegetarian: true,
+		glutenFree: false,
+		price: 14.95
+	},
+	{
+		name: "carrots",
+		vegetarian: false,
+		glutenFree: true,
+		price: 3.75
+	},
+	{
+		name: "hashbrowns",
+		vegetarian: true,
+		glutenFree: true,
+		price: 6.99
+	},
+	{
+		name: "eggs",
+		vegetarian: true,
+		glutenFree: false,
+		price: 2.35
+	},
+	{
+		name: "milk",
+		vegetarian: false,
+		glutenFree: true,
+		price: 3.15
+	},
+	{
+		name: "crackers",
+		vegetarian: false,
+		glutenFree: true,
+		price: 4.99
 	}
 ];
 	
