@@ -7,60 +7,70 @@ var products = [
 		name: "brocoli",
 		vegetarian: true,
 		glutenFree: true,
+		lactose: false,
 		price: 1.99
 	},
 	{
 		name: "bread",
 		vegetarian: true,
 		glutenFree: false,
+		lactose: false,
 		price: 2.35
 	},
 	{
 		name: "salmon",
 		vegetarian: false,
 		glutenFree: true,
+		lactose: false,
 		price: 10.00
 	},
 	{
 		name: "steak",
-		vegetarian: true,
+		vegetarian: false,
 		glutenFree: true,
+		lactose: false,
 		price: 12.35
 	},
 	{
 		name: "cake",
 		vegetarian: true,
 		glutenFree: false,
+		lactose: false,
 		price: 14.95
 	},
 	{
 		name: "carrots",
-		vegetarian: false,
+		vegetarian: true,
 		glutenFree: true,
+		lactose: false,
 		price: 3.75
 	},
 	{
 		name: "hashbrowns",
 		vegetarian: true,
-		glutenFree: true,
+		glutenFree: false,
+		lactose: false,
 		price: 6.99
 	},
 	{
 		name: "eggs",
 		vegetarian: true,
-		glutenFree: false,
+		glutenFree: true,
+		lactose: false,
 		price: 2.35
 	},
 	{
 		name: "milk",
-		vegetarian: false,
+		vegetarian: true,
 		glutenFree: true,
+		lactose: true,
 		price: 3.15
 	},
 	{
 		name: "crackers",
-		vegetarian: false,
-		glutenFree: true,
+		vegetarian: true,
+		glutenFree: false,
+		lactose: false,
 		price: 4.99
 	}
 ];
