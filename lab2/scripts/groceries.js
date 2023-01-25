@@ -1,81 +1,71 @@
-	
 // Array of products, each product is an object with different fieldset
 // A set of ingredients should be added to products		 
 
 var products = [
+
 	{
-		name: "brocoli",
+		name: "apple 🍎",
 		vegetarian: true,
 		glutenFree: true,
-		lactose: false,
-		price: 1.99
+		price: 0.79
 	},
 	{
-		name: "bread",
+		name: "bread 🍞",
 		vegetarian: true,
 		glutenFree: false,
-		lactose: false,
-		price: 2.35
+		price: 1.97
 	},
 	{
-		name: "salmon",
+		name: "broccoli 🥦",
+		vegetarian: true,
+		glutenFree: true,
+		price: 2.29
+	},
+	{
+		name: "butter 🧈",
+		vegetarian: true,
+		glutenFree: true,
+		price: 3.48
+	},
+	{
+		name: "eggs 🥚",
+		vegetarian: true,
+		glutenFree: true,
+		price: 3.68
+	},
+	{
+		name: "avacado 🥑",
+		vegetarian: true,
+		glutenFree: true,
+		price: 4.97
+	},
+	{
+		name: "bacon 🥓",
 		vegetarian: false,
 		glutenFree: true,
-		lactose: false,
-		price: 10.00
+		price: 5.97
 	},
 	{
-		name: "steak",
+		name: "cheese 🧀",
+		vegetarian: true,
+		glutenFree: true,
+		price: 7.97
+	},
+	{
+		name: "sushi 🍣",
 		vegetarian: false,
 		glutenFree: true,
-		lactose: false,
-		price: 12.35
-	},
-	{
-		name: "cake",
-		vegetarian: true,
-		glutenFree: false,
-		lactose: false,
-		price: 14.95
-	},
-	{
-		name: "carrots",
-		vegetarian: true,
-		glutenFree: true,
-		lactose: false,
-		price: 3.75
-	},
-	{
-		name: "hashbrowns",
-		vegetarian: true,
-		glutenFree: false,
-		lactose: false,
 		price: 6.99
 	},
 	{
-		name: "eggs",
-		vegetarian: true,
+		name: "steak 🥩",
+		vegetarian: false,
 		glutenFree: true,
-		lactose: false,
-		price: 2.35
+		price: 18.58
 	},
-	{
-		name: "milk",
-		vegetarian: true,
-		glutenFree: true,
-		lactose: true,
-		price: 3.15
-	},
-	{
-		name: "crackers",
-		vegetarian: true,
-		glutenFree: false,
-		lactose: false,
-		price: 4.99
-	}
+
 ];
 	
-
 
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
@@ -96,6 +86,7 @@ function restrictListProducts(prods, restriction) {
 	return product_names;
 }
 
+
 // Calculate the total price of items, with received parameter being a list of products
 function getTotalPrice(chosenProducts) {
 	totalPrice = 0;
@@ -104,5 +95,6 @@ function getTotalPrice(chosenProducts) {
 			totalPrice += products[i].price;
 		}
 	}
-	return totalPrice;
+	// returns the price rounded to 2 decimal places -ms
+	return totalPrice.toFixed(2);
 }

@@ -1,4 +1,3 @@
-
 // This function is called when any of the tab is clicked
 // It is adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
 
@@ -78,6 +77,7 @@ function selectedItems(){
 	var para = document.createElement("P");
 	para.innerHTML = "You selected : ";
 	para.appendChild(document.createElement("br"));
+
 	for (i = 0; i < ele.length; i++) { 
 		if (ele[i].checked) {
 			para.appendChild(document.createTextNode(ele[i].value));
@@ -85,10 +85,16 @@ function selectedItems(){
 			chosenProducts.push(ele[i].value);
 		}
 	}
+
+	// provides feedback to user when trying to add items to cart -ms
+	if(chosenProducts.length == 0){
+		alert("No items selected");
+	} else{
+		alert("Items added to cart");
+	}
 		
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
+	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
 		
 }
-
