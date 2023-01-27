@@ -22,7 +22,7 @@ Slides 9-10 (Requirements):
 	
 		⚠️ User can select vegetarian or gluten free, NOT BOTH
 
-		✔️ USER CANNOT INDICATE ORGANIC / NON-ORGANIC (products not have this variable)
+		✔️ USER CAN INDICATE ORGANIC / NON-ORGANIC
 
 
 	Product Page:
