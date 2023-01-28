@@ -100,6 +100,7 @@ function restrictListProducts(prods, restriction) {
 			product_names.push(prods[i]);
 		}
 	}
+	product_names.sort((a,b) => a.price - b.price);
 	return product_names;
 }
 
