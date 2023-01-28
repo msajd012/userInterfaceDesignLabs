@@ -67,9 +67,10 @@
 <div id="Client" class="tabcontent">
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
-	Choose a Category:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
+	Choose your Dietary Restrictions:
+	<br>
+	<br>
+	<select id="dietSelect" name="dietSelect" multiple size="4" onchange="populateListProductChoices(this.id, 'displayProduct')">
 	<option value="Vegetarian">Vegetarian</option>
     <option value="GlutenFree">GlutenFree</option>
 	<option value="Organic">Organic</option>
