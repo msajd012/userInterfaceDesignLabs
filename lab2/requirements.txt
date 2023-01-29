@@ -20,16 +20,16 @@ Slides 9-10 (Requirements):
 
 	Customer Page:
 	
-		⚠️ User can select vegetarian or gluten free, NOT BOTH
+		✔️ User can select vegetarian or gluten free, NOT BOTH
 
 		✔️ USER CAN INDICATE ORGANIC / NON-ORGANIC
 
 
 	Product Page:
 
-		❌ "ITEMS SHOULD BE PRICED (TO ADD TO THE CODE PROVIDED)"
+		✔️ "ITEMS SHOULD BE PRICED (TO ADD TO THE CODE PROVIDED)"
 
-		⚠️ Items are sorted by price, SHOULD BE "[ADDED] TO THE CODE PROVIDED"
+		✔️ Items are sorted by price, SHOULD BE "[ADDED] TO THE CODE PROVIDED"
 
 	
 	Customer Page:
