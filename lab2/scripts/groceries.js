@@ -95,6 +95,9 @@ function restrictListProducts(prods, restriction) {
 			if ((restriction.includes("Organic")) && (!prods[i].organic)){
 				filters = false;
 			}
+			if ((restriction.includes("None")) && (!prods[i].organic)){
+				filters = true;
+			}
 		}
 		if (filters){
 			product_names.push(prods[i]);
