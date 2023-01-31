@@ -24,17 +24,20 @@ that is shown.
 	mistakes, too. Your site should not contain any faults. Have it reviewed by a
 	relative or friend if you are unsure.
 
-• Components (widgets) o Incorporate various components such as lists, radio buttons,
-checkboxes into your alternative. You certainly had some components in your Lab 2 site.
-Change these components. For example, replace a list with checkboxes, or vice versa. Try to
-understand how these choices constrain the user.
+• Components (widgets) 
+	o Incorporate various components such as lists, radio buttons,
+	checkboxes into your alternative. You certainly had some components in your Lab 2 site.
+	Change these components. For example, replace a list with checkboxes, or vice versa. Try to
+	understand how these choices constrain the user.
 
-• Structure patterns o In Lab 2, our list of products was a simple list, with no organization.
-You must add a categorization of the products: vegetable, fruit, dairy, juice, etc. Choose the
-categorization you want. And use a structure pattern that allows the user to see only
-vegetables or only fruits, etc. Use a structure pattern that you think is appropriate.
+• Structure patterns 
+	o In Lab 2, our list of products was a simple list, with no organization.
+	You must add a categorization of the products: vegetable, fruit, dairy, juice, etc. Choose the
+	categorization you want. And use a structure pattern that allows the user to see only
+	vegetables or only fruits, etc. Use a structure pattern that you think is appropriate.
 
-• Navigation patterns o For Lab 2, I offered you a navigation with the “Tab", this aim is to
-show information in blocks, while at the very least leaving the user free to open one card
-(one tab) at a time. Propose and implement a different navigation pattern (you can refer to
-the HOW-TO area of the W3schools tutorial).
+• Navigation patterns 
+	o For Lab 2, I offered you a navigation with the “Tab", this aim is to
+	show information in blocks, while at the very least leaving the user free to open one card
+	(one tab) at a time. Propose and implement a different navigation pattern (you can refer to
+	the HOW-TO area of the W3schools tutorial).
