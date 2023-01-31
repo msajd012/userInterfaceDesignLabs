@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!- This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+
+	<!-- allows emojis to be used in groceries.js -> var products -ms --> 
+	<meta charset="UTF-8">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<!-- allows material theme elements to be used -ms -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- closeable banner; text taken from metro.ca; code adapted from @dcode-software https://www.youtube.com/watch?v=x-LVUk2IxDU -ms --> 
+<div class="banner">
+	<div class="banner_content">
+		<div class="banner_text">
+			<strong>Free</strong> in-store pickup! Same low prices as the flyer. <strong>Shop now!</strong>
+		</div>
+		<button class="banner_close" type="button">
+			<span class="material-icons">
+				close
+			</span>
+		</button>
+	</div> 
+</div>
+
+<br>
+
+<script>
+	document.querySelector(".banner_close").addEventListener("click", function() {
+		this.closest(".banner").style.display = "none";
+	})
+</script>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab" style="display:inline;">
+	<div class="h1" style="display: inline;">
+		Grocery Essentials
+	</div>
+	<button class="tablinks" type="button" style="float: right;" onclick="openInfo(event, 'Cart')">
+			<span class="material-icons">
+				shopping_cart
+			</span>
+	</button>
+	<!-- stoe icon
+  <button class="tablinks" type="button" style="float: right;" onclick="openInfo(event, 'Products')">
+  		<span class="material-icons">
+  			store
+  		</span>
+  </button>
+	-->
+	<button class="tablinks" type="button" onclick="openInfo(event, 'Products')">Products</button>
+
+	<!-- person icon
+  <button class="tablinks" type="button" style="float: right;" onclick="openInfo(event, 'Client')">
+  	<span class="material-icons">
+  		person
+  	</span>
+  </button>
+	-->
+	<button class="tablinks" type="button" onclick="openInfo(event, 'Client')">Client</button>
+</div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Client Information</h3>
+  <p>Tell us a bit about you.</p>
+	Choose your Dietary Restrictions (CTRL-Click to select multiple):
+	<br>
+	<br>
+	<select multiple id="dietSelect" name="dietSelect" multiple size="4" onchange="populateListProductChoices(this.id, 'displayProduct')">
+		<option value="Vegetarian">Vegetarian</option>
+    <option value="GlutenFree">Gluten Free</option>
+		<option value="Organic">Organic</option>
+		<option value="None">None</option>
+	</select>
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Your targeted products</h3>
+  <p>We preselected products based on your restrictions.</p>
+	 Choose items to buy:
+	 <div id="displayProduct"></div>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected items to cart.
+	</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>Here is your cart.</p>
+  <div id="displayCart"></div>
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+<p id="signature">Site created by Group 13</p>
+
+</body>
+</html>
