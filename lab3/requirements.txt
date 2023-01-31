@@ -1,0 +1,40 @@
+All laboratory 2 functional requirements are still required.(Add price of products and the
+total in the cart page of not done in lab 2)
+
+• The display of images of the products, to help Eric, was not required in Laboratory 2. Your
+alternative should include images for products. If for your use images from a website,
+indicate the source in your README file in your repository.
+
+• Words
+	o Think about the choice of words. What words to put on the buttons? What words
+	to use in lists? In the instructions?
+	o For example, the departure code for Lab 2 contained:
+
+▪ "Choose a category." That's too vague a question. And also, the choice
+"Vegetarian” or "Gluten Free." A person cannot be "Gluten Free”, this a bad
+choice of words.
+
+▪ "We preselected based on your restrictions." Are they really restrictions, or
+preferences? How to ensure that the user will not be shocked by the word
+"restriction."
+
+▪ "Here’s your cart." That is not very fair. Rather, it is the content of the cart
+that is shown.
+	o Your new alternative should contain a fairer language. o Watch out spelling
+	mistakes, too. Your site should not contain any faults. Have it reviewed by a
+	relative or friend if you are unsure.
+
+• Components (widgets) o Incorporate various components such as lists, radio buttons,
+checkboxes into your alternative. You certainly had some components in your Lab 2 site.
+Change these components. For example, replace a list with checkboxes, or vice versa. Try to
+understand how these choices constrain the user.
+
+• Structure patterns o In Lab 2, our list of products was a simple list, with no organization.
+You must add a categorization of the products: vegetable, fruit, dairy, juice, etc. Choose the
+categorization you want. And use a structure pattern that allows the user to see only
+vegetables or only fruits, etc. Use a structure pattern that you think is appropriate.
+
+• Navigation patterns o For Lab 2, I offered you a navigation with the “Tab", this aim is to
+show information in blocks, while at the very least leaving the user free to open one card
+(one tab) at a time. Propose and implement a different navigation pattern (you can refer to
+the HOW-TO area of the W3schools tutorial).
