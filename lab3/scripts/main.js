@@ -79,7 +79,7 @@ function populateListProductChoices() {
 				var checkbox = document.createElement("input");
 				checkbox.type = "checkbox";
 				checkbox.name = "product";
-				checkbox.value = productName;
+				checkbox.value = optionArray[i].name.concat(" $".concat(optionArray[i].price));
 				s2.appendChild(checkbox);
 				
 				// create a label for the checkbox, and also add in HTML DOM
@@ -113,27 +113,27 @@ function selectedItems(){
 	c.innerHTML = "";
 	
 	// build list of selected item
-	var para = document.createElement("P");
-	para.innerHTML = "You selected : ";
-	para.appendChild(document.createElement("br"));
+	var para = document.createElement("div");
 
 	for (i = 0; i < ele.length; i++) { 
 		if (ele[i].checked) {
 			para.appendChild(document.createTextNode(ele[i].value));
 			para.appendChild(document.createElement("br"));
-			chosenProducts.push(ele[i].value);
+			chosenProducts.push(ele[i].value.split(" $")[0]);
 		}
 	}
 
+
 	// provides feedback to user when trying to add items to cart -ms
 	if(chosenProducts.length == 0){
-		alert("No items selected");
+		alert("Please select items first");
 	} else{
-		alert("Items added to cart");
+		alert("Items added to your cart");
 	}
 		
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
+	c.appendChild(document.createElement("br"));
+	c.appendChild(document.createTextNode("Total: $" + getTotalPrice(chosenProducts)));
 		
 }
