@@ -4,7 +4,7 @@
 var products = [
 
 	{
-		name: "apple 🍎",
+		name: "Apple 🍎",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
@@ -12,7 +12,7 @@ var products = [
 		price: 0.79
 	},
 	{
-		name: "bread 🍞",
+		name: "Bread 🍞",
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
@@ -20,7 +20,7 @@ var products = [
 		price: 1.97
 	},
 	{
-		name: "broccoli 🥦",
+		name: "Broccoli 🥦",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
@@ -28,7 +28,7 @@ var products = [
 		price: 2.29
 	},
 	{
-		name: "butter 🧈",
+		name: "Butter 🧈",
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
@@ -36,7 +36,7 @@ var products = [
 		price: 3.48
 	},
 	{
-		name: "eggs 🥚",
+		name: "Eggs 🥚",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
@@ -44,7 +44,7 @@ var products = [
 		price: 3.68
 	},
 	{
-		name: "avacado 🥑",
+		name: "Avocado 🥑",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
@@ -52,7 +52,7 @@ var products = [
 		price: 4.97
 	},
 	{
-		name: "bacon 🥓",
+		name: "Bacon 🥓",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
@@ -60,7 +60,7 @@ var products = [
 		price: 5.97
 	},
 	{
-		name: "cheese 🧀",
+		name: "Cheese 🧀",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
@@ -68,7 +68,7 @@ var products = [
 		price: 7.97
 	},
 	{
-		name: "sushi 🍣",
+		name: "Sushi 🍣",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
@@ -76,7 +76,7 @@ var products = [
 		price: 6.99
 	},
 	{
-		name: "steak 🥩",
+		name: "Steak 🥩",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,

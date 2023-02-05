@@ -39,48 +39,26 @@
 	<div class="h1" style="display: inline;">
 		Grocery Essentials
 	</div>
-	<button class="tablinks" type="button" style="float: right;" onclick="openInfo(event, 'Cart')">
-			<span class="material-icons">
-				shopping_cart
-			</span>
-	</button>
-	<!-- stoe icon
-  <button class="tablinks" type="button" style="float: right;" onclick="openInfo(event, 'Products')">
-  		<span class="material-icons">
-  			store
-  		</span>
-  </button>
-	-->
-	<button class="tablinks" type="button" onclick="openInfo(event, 'Shop')">Shop</button>
-
-	<!-- person icon
-  <button class="tablinks" type="button" style="float: right;" onclick="openInfo(event, 'Client')">
-  	<span class="material-icons">
-  		person
-  	</span>
-  </button>
-	-->
 </div>
 
 <!-- Tab content -->
 <div id="Shop" class="tabcontent">
-	<h1>Filters:</h1>
-	<input type="checkbox" id="Vegetarian" name="Vegetarian" value="Vegetarian" onclick="populateListProductChoices()">
-	<label for="Vegetarian">Vegetarian</label>
-	<input type="checkbox" id="GlutenFree" name="GlutenFree" value="Gluten Free" onclick="populateListProductChoices()">
-	<label for="GlutenFree">Gluten Free</label>
-	<input type="checkbox" id="Organic" name="Organic" value="Organic" onclick="populateListProductChoices()">
-	<label for="Organic">Organic</label>
-	<h1>Products:</h1>
-	<div id="displayProduct"></div>
-	<button id="addCart" type="button" class="block" onclick="selectedItems()">
-	Apply Selection
-	</button>
+<button class="accordion" onclick="showCart()"><h2>Your Cart</h2></button>
+<div class="panel">
+	<div id="displayCart"><p>Total: $0.00</p></div>
 </div>
-
-<div id="Cart" class="tabcontent">
-  <h3>Your Cart</h3>
-  <div id="displayCart"></div>
+<h1>Filters:</h1>
+<input type="checkbox" id="Vegetarian" name="Vegetarian" value="Vegetarian" onclick="populateListProductChoices()">
+<label for="Vegetarian">Vegetarian</label>
+<input type="checkbox" id="GlutenFree" name="GlutenFree" value="Gluten Free" onclick="populateListProductChoices()">
+<label for="GlutenFree">Gluten Free</label>
+<input type="checkbox" id="Organic" name="Organic" value="Organic" onclick="populateListProductChoices()">
+<label for="Organic">Organic</label>
+<h1>Products:</h1>
+<div id="displayProduct"></div>
+<button id="addCart" type="button" class="block" onclick="selectedItems()">
+Apply Selection
+</button>
 </div>
 
 <script src="scripts/groceries.js"></script>
