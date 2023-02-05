@@ -1,6 +1,11 @@
 // This function is called when any of the tab is clicked
 // It is adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
 
+function pageLoad(){
+	openInfo(event, "Shop");
+	populateListProductChoices();
+}
+
 function openInfo(evt, tabName) {
 
 	// Get all elements with class="tabcontent" and hide them
@@ -49,31 +54,45 @@ function populateListProductChoices() {
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
 	// <label for="Bread">Bread/label><br>
-		
-	for (i = 0; i < optionArray.length; i++) {
-			
-		var productName = optionArray[i].name;
-		let productPrice = optionArray[i].price;
-		// create the checkbox and add in HTML DOM
-		var checkbox = document.createElement("input");
-		checkbox.type = "checkbox";
-		checkbox.name = "product";
-		checkbox.value = productName;
-		s2.appendChild(checkbox);
-		
-		// create a label for the checkbox, and also add in HTML DOM
-		var label = document.createElement('label')
-		label.htmlFor = productName;
-		label.appendChild(document.createTextNode(productName));
-		s2.appendChild(label);
 
-		var label = document.createElement('label')
-		label.htmlFor = productPrice;
-		label.appendChild(document.createTextNode("$" + productPrice));
-		s2.appendChild(label);
+	var categories = [];
+
+	for (i=0;i<optionArray.length;i++){
+		if (!(categories.includes(optionArray[i].category))){
+			categories.push(optionArray[i].category);
+		}
+	}
+
+	for (j=0;j<categories.length;j++){
+		var e = document.createElement('h2');
+		e.innerHTML = (categories[j].charAt(0).toUpperCase() + categories[j].slice(1));
+		s2.appendChild(e);
+		for (i = 0; i < optionArray.length; i++) {
+			if (optionArray[i].category == categories[j]){
+				var productName = optionArray[i].name;
+				let productPrice = optionArray[i].price;
+				// create the checkbox and add in HTML DOM
+				var checkbox = document.createElement("input");
+				checkbox.type = "checkbox";
+				checkbox.name = "product";
+				checkbox.value = productName;
+				s2.appendChild(checkbox);
+				
+				// create a label for the checkbox, and also add in HTML DOM
+				var label = document.createElement('label')
+				label.htmlFor = productName;
+				label.appendChild(document.createTextNode(productName));
+				s2.appendChild(label);
 		
-		// create a breakline node and add in HTML DOM
-		s2.appendChild(document.createElement("br"));    
+				var label = document.createElement('label')
+				label.htmlFor = productPrice;
+				label.appendChild(document.createTextNode("$" + productPrice));
+				s2.appendChild(label);
+				
+				// create a breakline node and add in HTML DOM
+				s2.appendChild(document.createElement("br"));    
+			}
+		}
 	}
 }
 	
