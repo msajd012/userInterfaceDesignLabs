@@ -49,6 +49,10 @@ function populateListProductChoices() {
 		selectedOptions.push(document.getElementById("GlutenFree").name);
 	}
 
+	if (document.getElementById("Organic").checked){
+		selectedOptions.push(document.getElementById("Organic").name);
+	}
+
     var optionArray = restrictListProducts(products, selectedOptions);
 
 	// for each item in the array, create a checkbox element, each containing information such as:
