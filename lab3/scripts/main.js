@@ -26,9 +26,8 @@ function openInfo(evt, tabName) {
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
 
-function populateListProductChoices(slct1, slct2) {
-    var s1 = document.getElementById(slct1);
-    var s2 = document.getElementById(slct2);
+function populateListProductChoices() {
+    var s2 = document.getElementById("displayProduct");
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s2.innerHTML = "";
@@ -37,10 +36,12 @@ function populateListProductChoices(slct1, slct2) {
 
 	let selectedOptions = [];
 
-	for (let i = 0; i < s1.options.length; i++) {
-		if (s1.options[i].selected) {
-			selectedOptions.push(s1.options[i].value);
-		}
+	if (document.getElementById("Vegetarian").checked){
+		selectedOptions.push(document.getElementById("Vegetarian").name);
+	}
+
+	if (document.getElementById("GlutenFree").checked){
+		selectedOptions.push(document.getElementById("GlutenFree").name);
 	}
 
     var optionArray = restrictListProducts(products, selectedOptions);
