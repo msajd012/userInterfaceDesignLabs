@@ -39,8 +39,8 @@
 
     <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
     <!-- It can be useful for placement of information -->
-    <div class="row p-3">
-        <div class="col-sm-3 pl-5">Service</div>
+    <div class="row p-3 container-md mx-auto border rounded">
+        <div class="col-sm-3 pl-5"x>Service</div>
         <div class="col-sm-3">Calendar</div>
         <div class="col-sm-3">Payment</div>
         <div class="col-sm-3">Where to find us</div>
@@ -153,8 +153,8 @@
     <!-- My second card limits the information seen and uses collapsible to show more -->
     <div class="container p-3">
         <h2>Meet our hairdressers</h2>
-        <div class="card-columns">
-            <div class="card bg-warning" style="width:200px">
+        <div class="card-columns d-flex justify-content-start">
+            <div class="card bg-warning " style="width:200px">
                 <img class="card-img-top" src="images/Jule.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h4 class="card-title">Jules</h4>
@@ -211,8 +211,22 @@
                 </div>
                 <div id="collapseService" class="collapse show" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Here is our list of services</p>
+                        <p>Here is our list of services:</p>
                     </div>
+            
+                      </div>
+                      <div class="custom-control custom-radio  mb-3 w-50 ml-5">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">Haircut</label>
+                      </div>
+                      <div class="custom-control custom-radio  mb-3 w-50 ml-5">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">Drying</label>
+                      </div>
+                      <div class="custom-control custom-radio  mb-3 w-50 ml-5">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">Colouring</label>
+                      </div>
                 </div>
             <div class="card">
                 <div class="card-header">
@@ -238,8 +252,26 @@
                 </div>
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Your information so we can contact you</p>
-                        <p>Form to enter name, email, phone</p>
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputName">Name</label>
+                              <textarea placeholder="Enter name" class="form-control" id="exampleInputName" rows="1"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPhone">Phone Number</label>
+                                <textarea placeholder="Enter Phone Number" class="form-control" id="exampleInputPhone" rows="1"></textarea>
+                              </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Message you want to send us</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
                     </div>
                 </div>
             </div>
