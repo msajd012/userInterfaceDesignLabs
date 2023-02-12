@@ -1,0 +1,29 @@
+❓ You have to use Bootstrap
+⚠️ Users can choose a service and set the date and time 
+✅ Users should be able to provide personal information to book the service
+
+Design Principles:
+
+	 ✅ Logo
+	 ✅ Shop's address
+	 ❌ Services offered and their prices
+	 ✅ Staff that provide those services
+	
+	 ❌ Selecting a service
+	 ⚠️ Selecting a date and time
+	 ✅ Entering contact information
+
+	 ⚠️ Standard components (buttons, lists)
+	 ❌ Add 'tooltip' for items (explanations)
+
+	 ❌ Use photos to show short, medium, long, or colour cuts
+	 
+	 ✅ Have aesthetic consistency (fonts and colour)
+	 ❓ Use Bootstrap components
+
+
+*************************
+* ✅ COMPLETE		*
+* ⚠️ PARTIALLY COMPLETE	*
+* ❌ NOT COMPLETE	*
+*************************
