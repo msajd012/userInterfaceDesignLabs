@@ -154,3 +154,29 @@ body{
   top: 12px;
   right: 16px;
 }
+
+.card {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px #ccc;
+}
+h1 {
+  margin-bottom: 20px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.price {
+  font-size: 18px;
+  color: #999;
+  margin-top: 5px;
+}
