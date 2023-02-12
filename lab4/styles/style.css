@@ -145,9 +145,8 @@ body{
   font-family: 'Quicksand', sans-serif;
   font-style: lighter;
   color: white;
-  position: absolute;
   bottom: 12px;
-  right: 16px;
+  margin-left: 16px;
 }
 
 .logo{
