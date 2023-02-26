@@ -18,7 +18,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script>
+    $(function() {
+        $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        });
+    });
+    </script>
 
     <!-- Your own additional style sheet -->
     <link href="styles/style.css" rel="stylesheet" type="text/css">
@@ -31,17 +46,38 @@
             <div class="banner_text">
                 Filthy Rich Barbershop
             </div>
-            <div class="banner_text_bottom">
-                148 Havemeyer St.<br>
-                Brooklyn, NY<br>
-                🇺🇸
-            </div>
+
             <div class="logo">
                 <a href="https://filthyrichbarbershop.com"><img src="images/logo.png" width="80px"></a>
             </div>
+
         </div> 
     </div>
 
+    <div class="scroll_content">
+        <div id="top">
+                <a href="#section1">
+            <div class="banner_text_top">
+                Book
+            </div></a>
+                <a href="#section2">
+            <div class="banner_text_top">
+                Stylists
+            </div></a>
+                <a href="#section3">
+            <div class="banner_text_top">
+                Services
+            </div></a>
+                <a href="#section4">
+            <div class="banner_text_top">
+                Hairstyles
+            </div></a>
+        </div>
+    </div>
+
+    <div id="section1">
+        <!-- BOOK APPOINTMENT SECTION -->
+    </div>
     <br>
 
     <div class="container">
@@ -197,7 +233,16 @@
     </div>
     </div>
 
+    <div class="scroll_content">
+        <div id="section2">
+        <a href="#top"><div class="banner_text_top">
+                Back To Top
+            </div></a>
+        <!-- HAIRDRESSERS SECTION -->
+        </div>
+    </div>
     <br>
+
         <div class="container">
             <div class="card-columns">
                 <div class="card" style="width:260px">
@@ -244,7 +289,15 @@
             <img src="images/background.jpeg" width="855px">
         </div>
 
-        <br>
+    <div class="scroll_content">
+        <div id="section3">
+        <a href="#top"><div class="banner_text_top">
+            Back To Top
+        </div></a>
+        <!-- SERVICES SECTION -->
+        </div>
+    </div>
+    <br>
 
         <div class="card">
             <h1>Services</h1>
@@ -260,7 +313,12 @@
             </ul>
           </div>
 
-        <br>
+    <div class="scroll_content">
+        <div id="section4">
+            <!-- HAIRSTYLES SECTION -->
+        </div>
+    </div>
+    <br>
 
         <div class="card long-hair">
             <img src=images/longhair.jpg alt="Long Hair">
@@ -281,11 +339,22 @@
             <h2>Coloured Hair</h2>
           </div>
 
-          <br>
+    <div class="scroll_content">
+        <a href="#top"><div class="banner_text_top">
+            Back To Top
+        </div></a>
+    </div>
+    <br>
       
 
         <div class="banner">
+            <div class="banner_text_bottom">
+                148 Havemeyer St.<br>
+                Brooklyn, NY<br>
+                🇺🇸
+            </div>
         </div>
+
        <!-- Button trigger modal -->
 
   

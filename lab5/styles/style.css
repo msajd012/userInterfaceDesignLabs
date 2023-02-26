@@ -119,6 +119,14 @@ body{
   align-items: center;
 }
 
+.scroll_content {
+  padding: 16px;
+  padding-left: 50px;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+}
+
 .banner {
   background: #151717;
   height: 100px;
@@ -140,13 +148,22 @@ body{
   color: white;
 }
 
+.banner_text_top {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-style: lighter;
+  color: black;
+  margin-left: 16px;
+}
+
 .banner_text_bottom {
   font-size: 16px;
   font-family: 'Quicksand', sans-serif;
   font-style: lighter;
   color: white;
+  position: absolute;
   bottom: 12px;
-  margin-left: 16px;
+  right: 16px;
 }
 
 .logo{
@@ -179,4 +196,9 @@ li {
   font-size: 18px;
   color: #999;
   margin-top: 5px;
+}
+
+#top {
+    display: flex;
+    justify-content: center;
 }
