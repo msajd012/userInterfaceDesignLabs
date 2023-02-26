@@ -47,7 +47,7 @@
     <div class="container">
         <div class="containerRegistration">
         <h1 class="form-title">Book Appointment</h1>
-        <form action="#">
+        <form action="#" id="#submitform">
             <div class="main-user-info">
 
                 <div class="user-input-box">
@@ -312,7 +312,10 @@
           
           
         <script>
- 
+            $("#submitform").submit(function(e) {
+    e.preventDefault();
+    
+});
         </script>
 
 </body>
