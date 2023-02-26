@@ -51,7 +51,7 @@ body{
   padding-bottom: 15px;
 }
 
-.user-input-box label{
+.user-input-box label, .manual-label{
   width: 95%;
   color: white;
   font-size: 20px;
