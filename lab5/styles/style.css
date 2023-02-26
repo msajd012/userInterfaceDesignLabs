@@ -153,7 +153,8 @@ body{
   font-family: 'Quicksand', sans-serif;
   font-style: lighter;
   color: black;
-  margin-left: 16px;
+  margin-right: 16px;
+  text-align: center;
 }
 
 .banner_text_bottom {
