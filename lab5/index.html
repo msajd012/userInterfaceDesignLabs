@@ -54,22 +54,22 @@
         </div> 
     </div>
 
-    <div class="scroll_content">
+    <div class="scroll_content top_navbar">
         <div id="top">
                 <a href="#section1">
-            <div class="banner_text_top">
+            <div class="banner_text_navbar">
                 Book
             </div></a>
                 <a href="#section2">
-            <div class="banner_text_top">
+            <div class="banner_text_navbar">
                 Stylists
             </div></a>
                 <a href="#section3">
-            <div class="banner_text_top">
+            <div class="banner_text_navbar">
                 Services
             </div></a>
                 <a href="#section4">
-            <div class="banner_text_top">
+            <div class="banner_text_navbar">
                 Hairstyles
             </div></a>
         </div>
@@ -83,9 +83,8 @@
     <div class="container">
         <div class="containerRegistration">
         <h1 class="form-title">Book Appointment</h1>
-        <form action="#" id="#submitform">
+        <form action="#" id="#submitform" class="needs-validation">
             <div class="main-user-info">
-
                 <div class="user-input-box">
                     <label for="firstName">First Name</label>
                     <input type="text"
@@ -105,7 +104,7 @@
                 </div>
 
                 <div class="user-input-box">
-                    <label for="phoneNumber">Phone Number</label>
+                    <label for="phoneNumber"><img src="images/smartphone.svg">Phone Number (XXX-XXX-XXXX)</label>
                     <input type="text"
                         id="phoneNumber"
                         name="phoneNumber"
@@ -114,7 +113,7 @@
                 </div>
 
                 <div class="user-input-box">
-                    <label for="time">Choose Appointment Time</label>
+                    <label for="time"><img src="images/calendar.svg">Choose Appointment Time</label>
                     <input type="time" 
                         id="appt"
                         name="appt"
@@ -123,7 +122,9 @@
                         required>
                 </div>
                 
-                <label class="manual-label">Preferred Hairdresser</label>
+                
+                <label class="manual-label"><img src="images/person.svg"> Preferred Hairdresser</label>
+                
                 <div class="list-group radio-list-group w-100" id="hairdresser">
                     <div class="list-group-item">
                         <input class="form-check-input" type="radio" name="radio-list" id="radio1" value="option1" checked>
@@ -145,7 +146,8 @@
                     </div>
                 </div>
 
-                <label class="manual-label">Service</label>
+                
+                <label class="manual-label"><img src="images/scisors.svg"> Service</label>
                 <div class="list-group radio-list-group w-100" id="service">
                     <div class="list-group-item">
                         <input class="form-check-input" type="radio" name="radio-list2" id="radio1" value="option1" checked>
@@ -197,6 +199,9 @@
                     </div>
                 </div>
 
+                
+                <label class="manual-label"><img src="images/payments.svg"> Payment (In case of cancelation)</label>
+
                 <div class="user-input-box">
                     <label for="card-number">Card Number</label>
                     <input type="text"
@@ -207,7 +212,7 @@
                 </div>
 
                 <div class="user-input-box">
-                    <label for="expiry">Expiry Date</label>
+                    <label for="expiry">Expiry Date (MM/YY)</label>
                     <input type="text" 
                         id="expiry"
                         name="expiry"
@@ -225,11 +230,12 @@
                         pattern="^[0-9]{3,4}$"/>
                 </div>
             </div>
-            <div id="#submitbutton" class="form-submit-btn" data-toggle="modal" data-target="#exampleModal">
+            <div id="#submitbutton" class="form-submit-btn" data-target="#exampleModal">
                 <input type="submit" value="Confirm">
             </div>
             
         </form>
+        
     </div>
     </div>
 
