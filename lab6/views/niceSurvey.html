@@ -16,26 +16,26 @@
       <div class="row justify-content-center">
         <div class="col-md-10">
           <div class="card bg-dark text-light rounded-3">
-            <div class="card-body">
+            <div class="card-body" id="survey">
               <form>
                 <div class="form-group">
                   <label for="text-input" class="h5 font-weight-bold">What fruit(s) do you like?</label>
-                  <input type="text" class="form-control" id="text-input" placeholder="Fruit(s)">
+                  <input type="text" class="form-control" name="fruit" id="text-input" placeholder="Fruit(s)" required>
                 </div>
                 <div class="form-group">
                   <label for="checkbox-input" class="h5 font-weight-bold">What color(s) do you like?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="checkbox-input">
+                    <input class="form-check-input" name="color" type="checkbox" id="checkbox-input" value="Red">
                     <label class="form-check-label" for="checkbox-input">
                       Red
                     </label>
                     <br>
-                    <input class="form-check-input" type="checkbox" id="checkbox-input">
+                    <input class="form-check-input" name="color" type="checkbox" id="checkbox-input" value="Green">
                     <label class="form-check-label" for="checkbox-input">
                       Green
                     </label>
                     <br>
-                    <input class="form-check-input" type="checkbox" id="checkbox-input">
+                    <input class="form-check-input" name="color" type="checkbox" id="checkbox-input" value="Blue">
                     <label class="form-check-label" for="checkbox-input">
                       Blue
                     </label>
@@ -43,14 +43,14 @@
                 </div>
                 <div class="form-group">
                   <label for="selection-input" class="h5 font-weight-bold">What is your favorite animal?</label>
-                  <select class="form-control" id="selection-input">
-                    <option>Cat</option>
-                    <option>Dog</option>
-                    <option>Turtle</option>
+                  <select class="form-control" name="animal" id="selection-input">
+                    <option value="Cat">Cat</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Turtle">Turtle</option>
                   </select>
                 </div>
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary" id="bb">Submit</button>
                 </div>
               </form>
             </div>
