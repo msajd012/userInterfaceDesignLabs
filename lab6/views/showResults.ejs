@@ -21,7 +21,22 @@
     <ul>
     <% for (var i=0; i<results[2].length; i++){ %>
         <li><%= results[2][i].animal %> :  <%= results[2][i].count %></li>
+    <% } %>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[0][i].laundry %> :  <%= results[0][i].count %></li>
     <% } %>    
+    </ul>
+    <h2>Fruits</h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[1][i].vegetables %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Workout</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[2][i].workout %> :  <%= results[2][i].count %></li>
+    <% } %>     
     </ul>
 </body>
 </html>
