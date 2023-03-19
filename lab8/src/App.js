@@ -22,9 +22,9 @@ function App() {
             </div>
             <div class="col m-3">
               <h1 class="border border-primary text-primary p-3 rounded">Generate password</h1>
-              <h2 class="border border-secondary text-secondary p-3 rounded">
+              <h5 class="border border-secondary text-secondary p-3 rounded">
                 Your Password (Click to copy)
-              </h2>
+              </h5>
               <input
                 type='range'
                 class="form-range"
