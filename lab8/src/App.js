@@ -15,9 +15,9 @@ function App() {
           <div class="row">
             <div class="col-2 border border-primary rounded m-3">
               <ul class="nav flex-column">
-                <li class="m-3"><img src="..." alt="Characters" class="img-thumbnail"/></li>
-                <li class="m-3"><img src="..." alt="Symbols" class="img-thumbnail"/></li>
-                <li class="m-3"><img src="..." alt="Numbers" class="img-thumbnail"/></li>
+                <li class="m-3"><img src="characters.png" alt="Characters" class="img-thumbnail"/></li>
+                <li class="m-3"><img src="symbols.png" alt="Symbols" class="img-thumbnail"/></li>
+                <li class="m-3"><img src="twofactor.png" alt="Numbers" class="img-thumbnail"/></li>
               </ul>
             </div>
             <div class="col m-3">
