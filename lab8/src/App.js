@@ -15,16 +15,16 @@ function App() {
     <div className="App">
       <nav class="navbar navbar-light bg-primary">
         <div class="container-fluid">
-          <h1 class="bg-primary text-white">Password Genie</h1>
+          <h1 class="bg-primary text-white m-3">Password Genie</h1>
         </div>
       </nav>
       <div class="container-fluid">
           <div class="row">
             <div class="col-2 border border-primary rounded m-3">
               <ul class="nav flex-column">
-                <li class="m-3"><GreyableImage src="characters.png" alt="Characters" title="Characters"/></li>
-                <li class="m-3"><GreyableImage src="symbols.png" alt="Symbols" class="img-thumbnail" title="Symbols"/></li>
-                <li class="m-3"><GreyableImage src="twofactor.png" alt="Numbers" class="img-thumbnail" title="Numbers"/></li>
+                <li class="m-3"><GreyableImage src="characters.png" alt="Characters" title="Characters"/><h5 class="text-primary">Characters</h5></li>
+                <li class="m-3"><GreyableImage src="symbols.png" alt="Symbols" class="img-thumbnail" title="Symbols"/><h5 class="text-primary">Symbols</h5></li>
+                <li class="m-3"><GreyableImage src="twofactor.png" alt="Numbers" class="img-thumbnail" title="Numbers"/><h5 class="text-primary">Numbers</h5></li>
               </ul>
             </div>
             <div class="col m-3">
@@ -32,6 +32,7 @@ function App() {
               <h5 class="border border-secondary text-secondary p-3 rounded">
                 Your Password (Click to copy)
               </h5>
+              <h6 class="text-primary mt-3">Length</h6>
               <input
                 type='range'
                 class="form-range"
