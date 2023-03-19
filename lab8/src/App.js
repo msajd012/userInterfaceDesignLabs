@@ -40,7 +40,7 @@ function App() {
                 step={1}
                 onChange={sliderChange}
               />
-              <span class="text-primary">{length}</span>
+              <h6 class="text-primary">{length}</h6>
             </div>
             
           </div>
