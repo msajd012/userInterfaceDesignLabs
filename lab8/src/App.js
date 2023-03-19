@@ -8,20 +8,20 @@ function App() {
     <div className="App">
       <nav class="navbar navbar-light bg-primary">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1 text-white">Password Genie</span>
+          <h1 class="bg-primary text-white">Password Genie</h1>
         </div>
       </nav>
       <div class="container-fluid">
           <div class="row">
-            <nav class="col-2 border border-primary rounded m-3">
+            <div class="col-2 border border-primary rounded m-3">
               <ul class="nav flex-column">
                 <li class="m-3"><img src="..." alt="Characters" class="img-thumbnail"/></li>
                 <li class="m-3"><img src="..." alt="Symbols" class="img-thumbnail"/></li>
                 <li class="m-3"><img src="..." alt="Numbers" class="img-thumbnail"/></li>
               </ul>
-            </nav>
-            <div class="col-10 offset-2" id="main">
-              <h1>Generate password</h1>
+            </div>
+            <div class="col m-3">
+              <h1 class="border border-primary text-primary p-3 rounded">Generate password</h1>
               <p>
                 Your Password (Click to copy)
               </p>
