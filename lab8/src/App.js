@@ -22,16 +22,15 @@ function App() {
             </div>
             <div class="col m-3">
               <h1 class="border border-primary text-primary p-3 rounded">Generate password</h1>
-              <p>
+              <h2 class="border border-secondary text-secondary p-3 rounded">
                 Your Password (Click to copy)
-              </p>
+              </h2>
               <input
                 type='range'
                 class="form-range"
                 min={4}
                 max={128}
-                step={1}
-                className='custom-slider'/>
+                step={1}/>
 
             </div>
           </div>
