@@ -9,8 +9,9 @@ function GreyableImage(props) {
 
   const imageStyle = {
     filter: isGreyedOut ? 'grayscale(100%)' : 'none',
-    width: '64px', // Custom width
-    height: '64px', // Custom height
+    width: '64px',
+    height: '64px',
+
   }
 
   return (

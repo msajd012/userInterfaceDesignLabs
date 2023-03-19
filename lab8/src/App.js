@@ -2,9 +2,15 @@ import logo from './logo.svg';
 import 'bootstrap/dist/js/bootstrap.js';
 import './App.css';
 import GreyableImage from './Criteria';
+import { useState } from 'react';
 
 
 function App() {
+  const [length, setLength] = useState(32); 
+
+  function sliderChange(event) {
+    setLength(event.target.value)
+  }
   return (
     <div className="App">
       <nav class="navbar navbar-light bg-primary">
@@ -31,9 +37,12 @@ function App() {
                 class="form-range"
                 min={4}
                 max={128}
-                step={1}/>
-
+                step={1}
+                onChange={sliderChange}
+              />
+              <span class="text-primary">{length}</span>
             </div>
+            
           </div>
       </div>
     </div>
