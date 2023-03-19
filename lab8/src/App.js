@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import 'bootstrap/dist/js/bootstrap.js';
 import './App.css';
+import GreyableImage from './Criteria';
 
 
 function App() {
@@ -15,9 +16,9 @@ function App() {
           <div class="row">
             <div class="col-2 border border-primary rounded m-3">
               <ul class="nav flex-column">
-                <li class="m-3"><img src="characters.png" alt="Characters" class="img-thumbnail"/></li>
-                <li class="m-3"><img src="symbols.png" alt="Symbols" class="img-thumbnail"/></li>
-                <li class="m-3"><img src="twofactor.png" alt="Numbers" class="img-thumbnail"/></li>
+                <li class="m-3"><GreyableImage src="characters.png" alt="Characters" title="Characters"/></li>
+                <li class="m-3"><GreyableImage src="symbols.png" alt="Symbols" class="img-thumbnail" title="Symbols"/></li>
+                <li class="m-3"><GreyableImage src="twofactor.png" alt="Numbers" class="img-thumbnail" title="Numbers"/></li>
               </ul>
             </div>
             <div class="col m-3">
