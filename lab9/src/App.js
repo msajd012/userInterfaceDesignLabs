@@ -59,34 +59,63 @@ function App() {
         </div>
       </nav>
       <div class="container-fluid">
-          <div class="row">
-            <div class="col-2 border border-primary rounded m-3">
-              <ul class="nav flex-column">
-                <li class="m-3"><GreyableImage src="characters.png" alt="Characters" title="Characters" active={useCharacters} setActive={setUseCharacters}/><h5 class="text-primary">Characters</h5></li>
-                <li class="m-3"><GreyableImage src="symbols.png" alt="Symbols" class="img-thumbnail" title="Symbols" active={useSymbols} setActive={setUseSymbols}/><h5 class="text-primary">Symbols</h5></li>
-                <li class="m-3"><GreyableImage src="twofactor.png" alt="Numbers" class="img-thumbnail" title="Numbers" active={useNumbers} setActive={setUseNumbers}/><h5 class="text-primary">Numbers</h5></li>
-              </ul>
-            </div>
-            <div class="col m-3">
-              <h1 class="border border-primary text-primary p-3 rounded" onClick={generatePassword}>Generate password</h1>
-              <h5 class="border border-secondary text-secondary p-3 rounded" onClick={copyPassword}>
-                Your Password: {password} ({copied ? 'Copied!' : 'Click to Copy'})
-              </h5>
-              <h6 class="text-primary mt-3">Length</h6>
-              <input
-                type='range'
-                class="form-range"
-                min={4}
-                max={128}
-                step={1}
-                onChange={sliderChange}
-              />
-              <h6 class="text-primary">{length}</h6>
-            </div>
-            
-          </div>
+    <div class="row">
+      <div class="col-2 border border-primary rounded m-3">
+        <ul class="nav flex-column">
+          <li class="m-3">
+            <GreyableImage
+              src="characters.png"
+              alt={text[language].characters}
+              title={text[language].characters}
+              active={useCharacters}
+              setActive={setUseCharacters}
+            />
+            <h5 class="text-primary">{text[language].characters}</h5>
+          </li>
+          <li class="m-3">
+            <GreyableImage
+              src="symbols.png"
+              alt={text[language].symbols}
+              class="img-thumbnail"
+              title={text[language].symbols}
+              active={useSymbols}
+              setActive={setUseSymbols}
+            />
+            <h5 class="text-primary">{text[language].symbols}</h5>
+          </li>
+          <li class="m-3">
+            <GreyableImage
+              src="twofactor.png"
+              alt={text[language].numbers}
+              class="img-thumbnail"
+              title={text[language].numbers}
+              active={useNumbers}
+              setActive={setUseNumbers}
+            />
+            <h5 class="text-primary">{text[language].numbers}</h5>
+          </li>
+        </ul>
+      </div>
+      <div class="col m-3">
+        <h1
+          class="border border-primary text-primary p-3 rounded"
+          onClick={generatePassword}
+        >
+          {text[language].generate}
+        </h1>
+        <h5
+          class="border border-secondary text-secondary p-3 rounded"
+          onClick={copyPassword}
+        >
+          {text[language].yourPassword} {password} ({copied ? text[language].copy : "Click to Copy"})
+        </h5>
+        <h6 class="text-primary mt-3">{text[language].length}</h6>
+        <input type="range" class="form-range" min={4} max={128} step={1} onChange={sliderChange} />
+        <h6 class="text-primary">{length}</h6>
       </div>
     </div>
+  </div>
+</div>
   );
 }
 
