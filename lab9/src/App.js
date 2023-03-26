@@ -10,17 +10,36 @@ function App() {
   const [password, setPassword] = useState("");
   const [copied, setCopied] = useState(false);
 
+  const [useCharacters, setUseCharacters] = useState(true);
+  const [useNumbers, setUseNumbers] = useState(true);
+  const [useSymbols, setUseSymbols] = useState(true);
+
   function sliderChange(event) {
     setLength(event.target.value);
   }
 
   function generatePassword(){
+    let characterSet = '';
     let result = '';
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    const charactersLength = characters.length;
+
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    const numbers = '0123456789';
+    const symbols = '!@#$%^&*()-_+';
+
+    if (useCharacters) {
+      characterSet += characters;
+    }
+    if (useNumbers) {
+      characterSet += numbers; 
+    }
+    if (useSymbols) {
+      characterSet += symbols;
+    }
+
+    const characterSetLength = characterSet.length;
     
     for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      result += characterSet.charAt(Math.floor(Math.random() * characterSetLength));
     }
     
     setPassword(result);
@@ -43,9 +62,9 @@ function App() {
           <div class="row">
             <div class="col-2 border border-primary rounded m-3">
               <ul class="nav flex-column">
-                <li class="m-3"><GreyableImage src="characters.png" alt="Characters" title="Characters"/><h5 class="text-primary">Characters</h5></li>
-                <li class="m-3"><GreyableImage src="symbols.png" alt="Symbols" class="img-thumbnail" title="Symbols"/><h5 class="text-primary">Symbols</h5></li>
-                <li class="m-3"><GreyableImage src="twofactor.png" alt="Numbers" class="img-thumbnail" title="Numbers"/><h5 class="text-primary">Numbers</h5></li>
+                <li class="m-3"><GreyableImage src="characters.png" alt="Characters" title="Characters" active={useCharacters} setActive={setUseCharacters}/><h5 class="text-primary">Characters</h5></li>
+                <li class="m-3"><GreyableImage src="symbols.png" alt="Symbols" class="img-thumbnail" title="Symbols" active={useSymbols} setActive={setUseSymbols}/><h5 class="text-primary">Symbols</h5></li>
+                <li class="m-3"><GreyableImage src="twofactor.png" alt="Numbers" class="img-thumbnail" title="Numbers" active={useNumbers} setActive={setUseNumbers}/><h5 class="text-primary">Numbers</h5></li>
               </ul>
             </div>
             <div class="col m-3">

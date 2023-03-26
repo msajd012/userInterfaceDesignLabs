@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 
 function GreyableImage(props) {
-  const [isGreyedOut, setIsGreyedOut] = useState(false);
 
   const toggleGrey = () => {
-    setIsGreyedOut(!isGreyedOut);
+    props.setActive(!props.active);
   }
 
   const imageStyle = {
-    filter: isGreyedOut ? 'grayscale(100%)' : 'none',
+    filter: props.active ? 'none' : 'grayscale(100%)',
     width: '64px',
     height: '64px',
 
