@@ -3,6 +3,7 @@ import 'bootstrap/dist/js/bootstrap.js';
 import './App.css';
 import GreyableImage from './Criteria';
 import { useState } from 'react';
+import { motion } from "framer-motion";
 
 
 function App() {
@@ -97,12 +98,15 @@ function App() {
         </ul>
       </div>
       <div class="col m-3">
-        <h1
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          onHoverStart={e => {}}
+          onHoverEnd={e => {}}
           class="border border-primary text-primary p-3 rounded"
           onClick={generatePassword}
         >
           {text[language].generate}
-        </h1>
+        </motion.div>
         <h5
           class="border border-secondary text-secondary p-3 rounded"
           onClick={copyPassword}
