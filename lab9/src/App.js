@@ -17,6 +17,8 @@ function App() {
       copied: "Copied",
       copy: "Click to Copy",
       length: "Length",
+      passwordStrength: "Password Strength:",
+      strength: ["Weak", "Average", "Strong", "Very Strong"],
     },
     fr: {
       title: "Génie de mot de passe",
@@ -28,6 +30,8 @@ function App() {
       copied: "Copié!",
       copy: "Cliquer pour Copier",
       length: "Longueur",
+      passwordStrength: "Force du mot de passe:",
+      strength: ["Faible", "Moyenne", "Forte", "Très forte"],
     },
   };
 
@@ -46,16 +50,16 @@ function App() {
   let strengthName;
   if (strengthScore < 20) {
     strengthColor = "red";
-    strengthName = "Weak";
+    strengthName = 0;
   } else if (strengthScore < 40) {
     strengthColor = "orange";
-    strengthName = "Average";
+    strengthName = 1;
   } else if (strengthScore < 80) {
     strengthColor = "#FFD700";
-    strengthName = "Strong";
+    strengthName = 2;
   } else {
     strengthColor = "green";
-    strengthName = "Very strong";
+    strengthName = 3;
   }
 
   function sliderChange(event) {
@@ -182,7 +186,7 @@ function App() {
             />
             <h6 class="text-primary">{length}</h6>
             <div>
-              Password strength:<p style={{color:strengthColor}}>{strengthName}</p>
+              {text[language].passwordStrength}<p style={{color:strengthColor}}>{text[language].strength[strengthName]}</p>
             </div>
           </div>
         </div>
