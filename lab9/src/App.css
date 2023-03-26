@@ -36,25 +36,3 @@
     transform: rotate(360deg);
   }
 }
-const text{
-  en{
-    title: "Password Genie",
-    characters: "Characters",
-    symbols: "Symbols",
-    numbers: "Numbers",
-    generate: "Generate password",
-    yourPassword: "Your Password:",
-    copy: "Click to Copy",
-    length: "Length",
-  },
-  fr{
-    title: "Génie de mot de passe",
-    characters: "Caractères",
-    symbols: "Symboles",
-    numbers: "Nombres",
-    generate: "Générer un mot de passe",
-    yourPassword: "Votre mot de passe:",
-    copy: "Cliquer pour Copier",
-    length: "Longueur",
-  }
-};

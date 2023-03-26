@@ -7,6 +7,31 @@ import { motion } from "framer-motion";
 
 
 function App() {
+  const text = {
+    en: {
+      title: "Password Genie",
+      characters: "Characters",
+      symbols: "Symbols",
+      numbers: "Numbers",
+      generate: "Generate password",
+      yourPassword: "Your Password:",
+      copied: "Copié!",
+      copy: "Click to Copy",
+      length: "Length",
+    },
+    fr: {
+      title: "Génie de mot de passe",
+      characters: "Caractères",
+      symbols: "Symboles",
+      numbers: "Nombres",
+      generate: "Générer un mot de passe",
+      yourPassword: "Votre mot de passe:",
+      copied: "Copié!",
+      copy: "Cliquer pour Copier",
+      length: "Longueur",
+    }
+  };
+
   const [length, setLength] = useState(32);
   const [password, setPassword] = useState("");
   const [copied, setCopied] = useState(false);
@@ -14,6 +39,8 @@ function App() {
   const [useCharacters, setUseCharacters] = useState(true);
   const [useNumbers, setUseNumbers] = useState(true);
   const [useSymbols, setUseSymbols] = useState(true);
+
+  const [language, setLanguage] = useState("en");
 
   function sliderChange(event) {
     setLength(event.target.value);
@@ -52,11 +79,16 @@ function App() {
     setTimeout(() => setCopied(false), 1500);
   }
 
+  function toggleLanguage(){
+    setLanguage(language=="en"?"fr":'en');
+  }
+
   return (
     <div className="App">
       <nav class="navbar navbar-light bg-primary">
         <div class="container-fluid">
           <h1 class="bg-primary text-white m-3">Password Genie</h1>
+          <h3 class="bg-primary text-white m-3" onClick={toggleLanguage}>{language}</h3>
         </div>
       </nav>
       <div class="container-fluid">
@@ -111,7 +143,7 @@ function App() {
           class="border border-secondary text-secondary p-3 rounded"
           onClick={copyPassword}
         >
-          {text[language].yourPassword} {password} ({copied ? text[language].copy : "Click to Copy"})
+          {text[language].yourPassword} {password} ({copied ? text[language].copied : text[language].copy})
         </h5>
         <h6 class="text-primary mt-3">{text[language].length}</h6>
         <input type="range" class="form-range" min={4} max={128} step={1} onChange={sliderChange} />
