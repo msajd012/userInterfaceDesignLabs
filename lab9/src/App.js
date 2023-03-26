@@ -41,6 +41,23 @@ function App() {
 
   const [language, setLanguage] = useState("en");
 
+  let strengthScore = (useCharacters + useNumbers + useSymbols) * length;
+  let strengthColor;
+  let strengthName;
+  if (strengthScore < 20) {
+    strengthColor = "red";
+    strengthName = "Weak";
+  } else if (strengthScore < 40) {
+    strengthColor = "orange";
+    strengthName = "Average";
+  } else if (strengthScore < 80) {
+    strengthColor = "#FFD700";
+    strengthName = "Strong";
+  } else {
+    strengthColor = "green";
+    strengthName = "Very strong";
+  }
+
   function sliderChange(event) {
     setLength(event.target.value);
   }
@@ -164,6 +181,9 @@ function App() {
               onChange={sliderChange}
             />
             <h6 class="text-primary">{length}</h6>
+            <div>
+              Password strength:<p style={{color:strengthColor}}>{strengthName}</p>
+            </div>
           </div>
         </div>
       </div>
