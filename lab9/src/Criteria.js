@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from "framer-motion";
 
 function GreyableImage(props) {
 
@@ -14,6 +15,7 @@ function GreyableImage(props) {
   }
 
   return (
+    <motion.div whileHover={{ scale: 1.15 }}>
     <img
       src={props.src}
       alt={props.alt}
@@ -21,6 +23,7 @@ function GreyableImage(props) {
       style={imageStyle}
       onClick={toggleGrey}
     />
+    </motion.div>
   );
 }
 

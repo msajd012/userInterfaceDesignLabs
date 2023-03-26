@@ -14,7 +14,7 @@ function App() {
       numbers: "Numbers",
       generate: "Generate password",
       yourPassword: "Your Password:",
-      copied: "Copié!",
+      copied: "Copied",
       copy: "Click to Copy",
       length: "Length",
     },
@@ -89,9 +89,11 @@ function App() {
       <nav class="navbar navbar-light bg-primary">
         <div class="container-fluid">
           <h1 class="bg-primary text-white m-3">Password Genie</h1>
+          <motion.div whileHover={{ scale: 1.25 }}>
           <h3 class="bg-primary text-white m-3" onClick={toggleLanguage}>
             {language == "en" ? "fr" : "en"}
           </h3>
+          </motion.div>
         </div>
       </nav>
       <div class="container-fluid">
